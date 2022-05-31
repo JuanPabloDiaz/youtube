@@ -4,330 +4,688 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youtube</title>
-    <link
-      rel="shortcut icon"
-      href="https://ouch-cdn2.icons8.com/lkLXlBjSXNiRTG9zZS8ZB-fzSmQ-L1Qf_fUVzcgb8h8/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzc5/LzJmNmJkMDk4LTM0/MDktNDdlOC1hNDgx/LTAxZjVlODdjMTIy/OS5wbmc.png"
-      type="image/x-icon"
-    />
+    <title>Video Sharing Website | JP</title>
     <script
       src="https://kit.fontawesome.com/af0bf7190a.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
-
   <body>
-    <div class="layout">
-      <header>
-        <div class="header--logo">
-          <button class="header--button" type="button">
-            <!-- <i class="fa-solid fa-bars"></i> -->
-            <img
-              class="icons-img"
-              src="./icons/001-menu.png"
-              alt="hamburguer menu"
-            />
-          </button>
-          <span class="logo--icon">
-            <i class="fa-brands fa-youtube"></i>
-            Youtube
-          </span>
+    <nav class="flex-div">
+      <div class="nav-left flex-div">
+        <img
+          class="menu-icon"
+          src="./src/icons/001-menu.png"
+          alt="hamburguer menu"
+        />
+        <a href="./index.html">
+          <img class="logo" src="./src/img/logoVidBox.png" alt="logo Vid Box" />
+        </a>
+      </div>
+      <div class="nav-middle flex-div">
+        <div class="search-box flex-div">
+          <input type="text" placeholder="Search" />
+          <img src="./src/img/search.png" alt="Search Bar" />
         </div>
-        <div class="header--search">
-          <form class="header--form" action="">
-            <input
-              class="header--input"
-              type="text"
-              placeholder="Search videos"
-            />
-            <button class="header--button header--button__gray" type="button">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <button class="header--button header--button__gray micro" type="button">
-              <i class="fa-solid fa-microphone"></i>
-            </button>
-          </form>
+        <div>
+          <i class="fa-solid fa-microphone"></i>
         </div>
-        <div class="header--profile">
-          <button class="header--button" type="button">
-            <i class="fa-solid fa-grid"></i>
-          </button>
-          <button class="header--button" type="button">
-            <i class="fa-solid fa-video-plus"></i>
-          </button>
-          <button class="header--button" type="button">
-            <!-- <i class="fa-solid fa-bell"></i> -->
-            <img class="icons-img" src="./icons/013-video.png" alt="create" />
-          </button>
-          <button class="header--button" type="button">
-            <img class="icons-img" src="./icons/016-apps.png" alt="grid menu" />
-          </button>
-          <button class="header--button" type="button">
-            <img class="icons-img" src="./icons/031-bell.png" alt="bell" />
-          </button>
-          <!-- <div class="header--menu-grid-icon">
-            <a href=""></a>
-          </div> -->
-          <img
-            class="jp-logo"
-            src="https://lh3.googleusercontent.com/a-/AOh14Gi76c4VloMOVZiMZ7tol9sy2R7D5uRyecZ45ny3=s96-c-rg-br100"
-            alt="JuanPa Profile Picture"
+      </div>
+      <div class="nav-right flex-div">
+        <img src="./src/icons/013-video.png" alt="create/upload" />
+        <img src="./src/icons/016-apps.png" alt="grid menu" />
+        <img src="./src/icons/031-bell.png" alt="notification bell" />
+        <img
+          class="user-icon circle-img"
+          src="./src/img/profile.jpg"
+          alt="profile Picture"
+        />
+      </div>
+    </nav>
+    <!-- ------------------------- SideBar -------------------------- -->
+
+    <div class="sidebar">
+      <div class="shortcut-links">
+        <a href="#">
+          <img src="./src/img/home.png" alt="home icon" />
+          <p>Home</p>
+        </a>
+        <a href="#">
+          <img src="./src/icons/042-explore.png" alt="Explore" />
+          <p>Explore</p>
+        </a>
+        <a href="#">
+          <img src="./src/icons/043-shorts.png" alt="shorts" />
+          <p>Shorts</p>
+        </a>
+        <a href="#">
+          <img src="./src/icons/006-subscribe.png" alt="Subscriptions" />
+          <p>Subscriptions</p>
+        </a>
+        <hr />
+        <a href="#">
+          <img src="./src/icons/005-library.png" alt="Library" />
+          <p>Library</p>
+        </a>
+        <a href="#">
+          <img src="./src/icons/007-history.png" alt="History" />
+          <p>History</p>
+        </a>
+        <a href="#">
+          <img src="./src/icons/028-video-1.png" alt="Your videos" />
+          <p>Your videos</p>
+        </a>
+        <a href="#">
+          <img src="./src/icons/041-clock.png" alt="Watch later" />
+          <p>Watch later</p>
+        </a>
+        <a href="#">
+          <img src="./src/icons/010-like.png" alt="Liked videos" />
+          <p>Liked videos</p>
+        </a>
+        <a href="#">
+          <img src="./src/icons/007-history.png" alt="History" />
+          <p>History</p>
+        </a>
+        <hr />
+      </div>
+      <div class="subscribed-list">
+        <h3>SUBSCRIPTIONS</h3>
+        <a href="#">
+          <img src="./src/img/platzi.jpg" alt="Subscribe Channel icon" />
+          <p>Platzi</p>
+        </a>
+        <a href="#">
+          <img src="./src/img/freeCodeCamp.jpg" alt="Subscribe Channel icon" />
+          <p>freeCodeCamp.org</p>
+        </a>
+        <a href="#">
+          <img src="./src/img/networkChuck.jpg" alt="Subscribe Channel icon" />
+          <p>NetworkChuck</p>
+        </a>
+        <a href="#">
+          <img src="./src/img/technoTim.jpg" alt="Subscribe Channel icon" />
+          <p>Techno Tim</p>
+        </a>
+        <a href="#">
+          <img src="./src/img/simon.png" alt="Subscribe Channel icon" />
+          <p>Simon Baker</p>
+        </a>
+        <a href="#">
+          <img src="./src/img/tom.png" alt="Subscribe Channel icon" />
+          <p>Tom Hardy</p>
+        </a>
+        <a href="#">
+          <img src="./src/img/megan.png" alt="Subscribe Channel icon" />
+          <p>Megan Fox</p>
+        </a>
+        <a href="#">
+          <img src="./src/img/cameron.png" alt="Subscribe Channel icon" />
+          <p>Cameron Diaz</p>
+        </a>
+        <a href="#">
+          <img src="./src/img/messages.png" alt="messages icon" />
+          <p>Messages</p>
+        </a>
+        <a href="#">
+          <img src="./src/img/playlist.png" alt="playlist icon" />
+          <p>Playlist</p>
+        </a>
+        <a href="#">
+          <img src="./src/img/show-more.png" alt="show more icon" />
+          <p>Show More</p>
+        </a>
+      </div>
+      <hr />
+      <div class="shortcut-links">
+        <h3>MORE FROM YOUTUBE</h3>
+        <a class="icons-img" href="#"
+          ><img
+            class="icons-img"
+            src="./src/icons/026-youtube.png"
+            alt="YouTube Premium"
           />
-        </div>
-      </header>
-      <aside>
-        <ul class="aside--list">
-          <li>
-            <a href="/">
-              <!-- <i class="fa-solid fa-house"></i> -->
-              <img class="icons-img" src="./icons/024-home.png" alt="home" />
-              Home</a
-            >
-          </li>
-          <li>
-            <a href="/">
-              <!-- <i class="fa-solid fa-compass"></i> -->
-              <img class="icons-img" src="./icons/042-explore.png" alt="explore" />
-              Explore</a
-            >
-          </li>
-          <li>
-            <a href="/">
-              <!-- <i class="fa-solid fa-house"></i> -->
-              <img class="icons-img" src="./icons/043-shorts.png" alt="" />
-              Shorts</a
-            >
-          </li>
-          <li>
-            <a href="/">
-              <!-- <i class="fa-solid fa-house"></i> -->
-              <img class="icons-img" src="./icons/006-subscribe.png" alt="" />
-              Subscriptions</a
-            >
-          </li>
-        </ul>
-        <ul class="aside--list">
-          <li>
-            <a href="/">
-              <!-- <i class="fa-solid fa-photo-film"></i> -->
-              <img class="icons-img" src="./icons/005-library.png" alt="" />
-              Library</a
-            >
-          </li>
-          <li>
-            <a href="/">
-              <!-- <i class="fa-solid fa-clock-rotate-left"></i> -->
-              <img class="icons-img" src="./icons/007-history.png" alt="History" />
-              History</a
-            >
-          </li>
-          <li>
-            <a href="/">
-              <!-- <i class="fa-solid fa-play"></i> -->
-              <img class="icons-img" src="./icons/028-video-1.png" alt="Your videos" />
-              Your videos</a
-            >
-          </li>
-          <li>
-            <a href="/">
-              <!-- <i class="fa-solid fa-clock"></i> -->
-              <img class="icons-img" src="./icons/041-clock.png" alt="Watch later" />
-              Watch later</a
-            >
-          </li>
-          <li>
-            <a href="/">
-              <!-- <i class="fa-solid fa-thumbs-up"></i> -->
-              <img class="icons-img" src="./icons/010-like.png" alt="Liked videos" />
-              Liked videos</a
-            >
-          </li>
-        </ul>
-        <ul class="aside--list">
-          <h3>SUBSCRIPTIONS</h3>
-          <li>
-            <a href="/">
-              <img class="channel-img subscr-img" src="./icons/006-subscribe.png" alt="subscribe" />
-              Platzi</a
-            >
-          </li>
-          <li>
-            <a href="/">
-              <img class="channel-img subscr-img" src="https://yt3.ggpht.com/ytc/AKedOLRR2uNiXJiFH-XRmtGgkdICxTuDJxCPJidKFRNCNg=s68-c-k-c0x00ffffff-no-rj" alt="" />
-              FreeCodeCamp</a
-            >
-          </li>
-          <li>
-            <a href="/">
-              <img class="channel-img subscr-img" src="https://yt3.ggpht.com/ytc/AKedOLTHjL08GyIUwy_6DxA3GtUzyPU1aOs2CwgNtuRJ4A=s88-c-k-c0x00ffffff-no-rj" alt="" />
-              NetworkChuck</a
-            >
-          </li>
-          <li>
-            <a href="/"></a>
-              <img class="channel-img subscr-img" src="https://yt3.ggpht.com/ytc/AKedOLRSvRMbZOFnESM-vdQhabWDsrR_PtOCHZaXribiGA=s88-c-k-c0x00ffffff-no-rj" alt="" />
-              Techno Tim</a
-            >
-          </li>
-          <li>
-            <button class="" type="button">
-              <i class="fa-solid fa-angle-down"></i> Show 12 more
-            </button>
-          </li>
-        </ul>
-        <ul class="aside--list">
-          <h3>MORE FROM YOUTUBE</h3>
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/026-youtube.png" alt="YouTube Premium" /> YouTube Premium</a></li>
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/040-film-strip.png" alt="Movies & Shows" /> Movies & Shows</a></li>
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/039-gaming.png" alt="Gaming" /> Gaming</a></li>
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/002-live.png" alt="live" /> Live</a></li>
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/038-fashion-design.png" alt="Fashion & Beauty" /> Fashion & Beauty</a></li>
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/035-bulb.png" alt="Learning" /> Learning</a></li>
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/036-trophy.png" alt="Sports" /> Sports</a></li>
-        </ul>
-        <ul class="aside--list">
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/032-settings.png" alt="Settings" /> Settings</a></li>
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/029-tag.png" alt="Report history" /> Report history</a></li>
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/033-question.png" alt="Help" /> Help</a></li>
-          <li><a class="icons-img" href=""><img class="icons-img" src="./icons/034-feedback.png" alt="Send feedback" /> Send feedback</a></li>
-        </ul>
-        
-      </aside>
-      <ul class="tags">
-        <li class="tags--item">All</li>
-        <li class="tags--item">HTML</li>
-        <li class="tags--item">Platzi</li>
-        <li class="tags--item">CSS</li>
-        <li class="tags--item">Js</li>
-        <li class="tags--item">Markdown</li>
-        <li class="tags--item">Code</li>
-        <li class="tags--item">Angular</li>
-        <li class="tags--item">Python</li>
-        <li class="tags--item">PHP</li>
-        <li class="tags--item">Git</li>
-        <li class="tags--item">Node.Js</li>
-        <li class="tags--item">Developer</li>
-        <li class="tags--item">Vue</li>
-        <li class="tags--item">Website</li>
-        <li class="tags--item">Docker</li>
-        <li class="tags--item">Json</li>
-        <li class="tags--item">Github</li>
-
-
-      </ul>
-      <main class="videos">
-        <div class="videos-row">
-          <h2 class="videos--title">Recommendations</h2>
-          <div class="video">
-            <div class="video--cover">
-              <img src="https://picsum.photos/200" alt="Video cover" />
-              <span>47:28</span>
-              <div class="hidding-text-box">
-                <div class="play-text">
-                  Keep hovering to play</div>
-                </div>
-              </div>
-              <button class="floating--button" type="button">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-              </button>
-            <div class="video--details">
-              <img class="channel-img"
-                src="https://yt3.ggpht.com/ytc/AKedOLTHjL08GyIUwy_6DxA3GtUzyPU1aOs2CwgNtuRJ4A=s68-c-k-c0x00ffffff-no-rj"
-                alt="Video profile"
-              />
-              <div class="video--description">
-                <h2 class="video--title">Best Tech Jobs in 2022</h2>
-                <p>NetworkChuck <i class="fa-solid fa-circle-check"></i></p>
-                <p>5.9M views - 8 weeks ago</p>
-              </div>
-            </div>
-          </div>
-          <div class="video">
-            <div class="video--cover">
-              <img src="https://picsum.photos/id/603/300/200" alt="Video cover" />
-              <span>05:08</span>
-              <div class="hidding-text-box">
-                <div class="play-text">
-                  Keep hovering to play</div>
-              </div>
-              <button class="floating--button" type="button">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-              </button>
-            </div>
-            <div class="video--details">
-              <img class="channel-img"
-                src="https://yt3.ggpht.com/ytc/AKedOLToU1sSfIWU5xGmwyGTWqP9iqY4MlgRolTMbTQeqg=s68-c-k-c0x00ffffff-no-rj"
-                alt="Channel"
-              />
-              <div class="video--description">
-                <h2 class="video--title">
-                  Work Remotely
-                </h2>
-                <p>Platzi <i class="fa-solid fa-circle-check"></i></p>
-                <p>358K views - 18 hours ago</p>
-              </div>
-            </div>
-          </div>
-          <div class="video">
-            <div class="video--cover">
-              <img src="https://picsum.photos/id/180/300/200" alt="Video cover" />
-              <span>34:54</span>
-              <div class="hidding-text-box">
-                <div class="play-text">
-                  Keep hovering to play</div>
-              </div>
-              <button class="floating--button" type="button">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-              </button>
-            </div>
-            <div class="video--details">
-              <img class="channel-img"
-                src="https://yt3.ggpht.com/ytc/AKedOLRR2uNiXJiFH-XRmtGgkdICxTuDJxCPJidKFRNCNg=s68-c-k-c0x00ffffff-no-rj"
-                alt="Video profile"
-              />
-              <div class="video--description">
-                <h2 class="video--title">
-                  Stoning Portfolio in 2022
-                </h2>
-                <p>FreeCodeCamp <i class="fa-solid fa-circle-check"></i></p>
-                <p>639K views - 7 months ago</p>
-              </div>
-            </div>
-          </div>
-          <div class="video">
-            <div class="video--cover">
-              <img src="https://picsum.photos/id/366/300/200" alt="Video cover" />
-              <span>13:40</span>
-              <div class="hidding-text-box">
-                <div class="play-text">
-                  Keep hovering to play</div>
-              </div>
-              <button class="floating--button" type="button">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-              </button>
-            </div>
-            <div class="video--details">
-              <img class="channel-img"
-                src="https://yt3.ggpht.com/ytc/AKedOLRyratMxgvHzoL-15qIZAGXjdALPmEe4jybJhd4MA=s68-c-k-c0x00ffffff-no-rj"
-                alt="Video profile"
-              />
-              <div class="video--description">
-                <h2 class="video--title">
-                  Crea tu portafolio #PlatziChallenge
-                </h2>
-                <p>MoureDev <i class="fa-solid fa-circle-check"></i></p>
-                <p>101K views - 2 hours ago</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="videos-row">
-          <h2 class="videos--title">Trending</h2>
-<p>add videos here!</p>
-<h3>make sure all the boxes on row one are setup correctly</h3>
-        </div>
-      </main>
+          <p>YouTube Premium</p></a
+        >
+        <a class="icons-img" href="#"
+          ><img
+            class="icons-img"
+            src="./src/icons/040-film-strip.png"
+            alt="Movies & Shows"
+          />
+          <p>Movies & Shows</p></a
+        >
+        <a class="icons-img" href="#"
+          ><img
+            class="icons-img"
+            src="./src/icons/039-gaming.png"
+            alt="Gaming"
+          />
+          <p>Gaming</p></a
+        >
+        <a class="icons-img" href="#"
+          ><img class="icons-img" src="./src/icons/002-live.png" alt="live" />
+          <p>Live</p></a
+        >
+        <a class="icons-img" href="#"
+          ><img
+            class="icons-img"
+            src="./src/icons/038-fashion-design.png"
+            alt="Fashion & Beauty"
+          />
+          <p>Fashion & Beauty</p></a
+        >
+        <a class="icons-img" href="#"
+          ><img
+            class="icons-img"
+            src="./src/icons/035-bulb.png"
+            alt="Learning"
+          />
+          <p>Learning</p></a
+        >
+        <a class="icons-img" href="#"
+          ><img
+            class="icons-img"
+            src="./src/icons/036-trophy.png"
+            alt="Sports"
+          />
+          <p>Sports</p></a
+        >
+        <hr />
+        <a class="icons-img" href="#"
+          ><img
+            class="icons-img"
+            src="./src/icons/032-settings.png"
+            alt="Settings"
+          />
+          <p>Settings</p></a
+        >
+        <a class="icons-img" href="#"
+          ><img
+            class="icons-img"
+            src="./src/icons/029-tag.png"
+            alt="Report history"
+          />
+          <p>Report history</p></a
+        >
+        <a class="icons-img" href="#"
+          ><img
+            class="icons-img"
+            src="./src/icons/033-question.png"
+            alt="Help"
+          />
+          <p>Help</p></a
+        >
+        <a class="icons-img" href="#"
+          ><img
+            class="icons-img"
+            src="./src/icons/034-feedback.png"
+            alt="Send feedback"
+          />
+          <p>Send feedback</p></a
+        >
+      </div>
     </div>
+
+    <!-- ------------------------- Main -------------------------- -->
+
+    <div class="container">
+      <div class="banner">
+        <img src="./src/img/banner2000x300.png" alt="banner image" />
+      </div>
+      <div class="list-container">
+        <div class="vid-list">
+          <a href="./src/pages/video1.html">
+            <img class="thumbnail" src="./src/img/nascar.jpg"
+          /></a>
+          <span class="unhide">10:59</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/nascar-icon.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/video1.html">
+                Austin Dillon spins, loses lead in overtime at Charlotte
+              </a>
+              <p>Nascar <i class="fa-solid fa-circle-check"></i></p>
+              <p>75M views &bull; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/video2.html">
+            <img class="thumbnail" src="./src/img/juanes.jpg"
+          /></a>
+          <span class="unhide">4:31</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/laMega.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/video2.html"
+                >Juanes - Dancing In The Dark
+              </a>
+              <p>La Mega <i class="fa-solid fa-circle-check"></i></p>
+              <p>3.4K views &bull; 7 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/video3.html">
+            <img class="thumbnail" src="./src/img/whiteHouse.jpg"
+          /></a>
+          <span class="unhide">47:28</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/cnn.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/video3.html"
+                >White House Prepares For $1.9 Trillion COVID Relief Deal
+              </a>
+              <p>CNN <i class="fa-solid fa-circle-check"></i></p>
+              <p>1.3K views &bull; 2 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/twitter.html">
+            <img class="thumbnail" src="./src/img/twitterElonMusk.jpg"
+          /></a>
+          <span class="unhide">15:07</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/tom.png"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/twitter.html"
+                >Elon Musk Buys Twitter for $44 BILLION</a
+              >
+              <p>Tom Cruz <i class="fa-solid fa-circle-check"></i></p>
+              <p>366 views &bull; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/video4.html">
+            <img class="thumbnail" src="./src/img/badBunny.jpg"
+          /></a>
+          <span class="unhide">02:39</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/watchMojo.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/video4.html"> Top 10 Best Bad Bunny Songs</a>
+              <p>WatchMojo <i class="fa-solid fa-circle-check"></i></p>
+              <p>1.8M views &bull; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/video5.html">
+            <img class="thumbnail" src="./src/img/venezuela.jpg"
+          /></a>
+          <span class="unhide">55:18</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/cameron.png"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/video5.html"
+                >Clashes on the Venezuela-Colombia border
+              </a>
+              <p>Cameron Diaz <i class="fa-solid fa-circle-check"></i></p>
+              <p>85 views &bull; 16 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/video6.html">
+            <img class="thumbnail" src="./src/img/moon.jpg"
+          /></a>
+          <span class="unhide">13:54</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/simon.png"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/video6.html"
+                >Top astronomy events for June 2022
+              </a>
+              <p>Simon Baker <i class="fa-solid fa-circle-check"></i></p>
+              <p>2K views &bull; 11 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/video7.html">
+            <img class="thumbnail" src="./src/img/war.jpg"
+          /></a>
+          <span class="unhide">03:34</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/gerard.png"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/video7.html"
+                >As Russia bans Facebook and Instagram, what alternatives will
+                Russian social media users turn to?</a
+              >
+              <p>LiveNow <i class="fa-solid fa-circle-check"></i></p>
+              <p>175K views &bull; 5 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/video8.html">
+            <img class="thumbnail" src="./src/img/tech.jpg"
+          /></a>
+          <span class="unhide">27:14</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/networkChuck.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/video8.html">
+                Don't Throw Your Old Tech In The Trash
+              </a>
+              <p>NetworkChunck <i class="fa-solid fa-circle-check"></i></p>
+              <p>2K views &bull; 3 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/video9.html">
+            <img class="thumbnail" src="./src/img/netflix.jpg"
+          /></a>
+          <span class="unhide">08:03</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/freeCodeCamp.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/video9.html"
+                >Stop Sharing Your Password Now
+              </a>
+              <p>Free Code Camp <i class="fa-solid fa-circle-check"></i></p>
+              <p>291K views &bull; 8 years ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4>
+        <i>RECOMMENDED: </i> DEBAJO DE ESTOS VIDEOS DEBO COLOCAR LOS LINKS DE
+        LAS PAGINAS THAT WILL BE MATCHING...
+      </h4>
+      <div class="list-container">
+        <div class="vid-list">
+          <a href="#">
+            <img class="thumbnail" src="./src/img/technoTimPage.jpg"
+          /></a>
+          <span class="unhide">10:59</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/technoTim.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="https://www.youtube.com/watch?v=_ypAmCcIlBE">
+                I Built the PERFECT Game Server with Pterodactyl and Docker</a
+              >
+              <p>Techno Tim <i class="fa-solid fa-circle-check"></i></p>
+              <p>75M views &bull; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/noWar.html">
+            <img class="thumbnail" src="./src/img/noWar.jpg"
+          /></a>
+          <span class="unhide">20:31</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/megan.png"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="https://www.youtube.com/watch?v=8DLSkIgps5U">
+                ‘No war’: Russian Protester Detained For Crashing Live
+                Broadcast</a
+              >
+              <p>Megan Fox <i class="fa-solid fa-circle-check"></i></p>
+              <p>3.4K views &bull; 7 hours ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/play.html">
+            <img class="thumbnail" src="./src/img/thumbnail2.png"
+          /></a>
+          <span class="unhide">47:28</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/tom.png"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/play.html">
+                LEAVE THIS IMAGE AND VIDEO AS IT IS</a
+              >
+              <p>Tom Hardy <i class="fa-solid fa-circle-check"></i></p>
+              <p>1.3K views &bull; 2 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/twitter.html">
+            <img class="thumbnail" src="./src/img/twitterElonMusk.jpg"
+          /></a>
+          <span class="unhide">15:07</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/platzi.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="https://www.youtube.com/watch?v=d6h1C_yQA-Q&t=1093s">
+                Why Elon Musk bought Twitter 🐦</a
+              >
+              <p>Platzi <i class="fa-solid fa-circle-check"></i></p>
+              <p>366 views &bull; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/play.html">
+            <img class="thumbnail" src="./src/img/networkChuckPage.jpg"
+          /></a>
+          <span class="unhide">02:39</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/networkChuck.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="https://www.youtube.com/watch?v=lTlTjeCjXYM">
+                Hack a Cisco Switch with a Raspberry Pi - CCNA Security - CCNP
+                Security - Network+</a
+              >
+              <p>NetworkChuck <i class="fa-solid fa-circle-check"></i></p>
+              <p>1.8M views &bull; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="https://www.youtube.com/watch?v=_SB7h2kB6Eg">
+            <img class="thumbnail" src="./src/img/lambo.jpg"
+          /></a>
+          <span class="unhide">13:54</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/simon.png"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/play.html">
+                The World's Most Insane Car! Lamborghini Vision GT
+              </a>
+              <p>Simon Baker <i class="fa-solid fa-circle-check"></i></p>
+              <p>2K views &bull; 11 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/play.html">
+            <img class="thumbnail" src="./src/img/stress.jpg"
+          /></a>
+          <span class="unhide">03:34</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/cameron.png"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="./src/pages/play.html">
+                Video Tittle: Best Channel to learn coding that help you</a
+              >
+              <p>Cameron Diaz <i class="fa-solid fa-circle-check"></i></p>
+              <p>175K views &bull; 5 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/play.html">
+            <img class="thumbnail" src="./src/img/networkChuckPage2.jpg"
+          /></a>
+          <span class="unhide">27:14</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/networkChuck.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="https://www.youtube.com/watch?v=ACM36qtHIEg">
+                You need to HACK faster!! (Linux Terminal hacks YOU NEED!!)</a
+              >
+              <p>NetworkChunck <i class="fa-solid fa-circle-check"></i></p>
+              <p>2K views &bull; 3 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/freecodecamp.html">
+            <img class="thumbnail" src="./src/img/freecodecampPage.jpg"
+          /></a>
+          <span class="unhide">08:03</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/freeCodeCamp.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="https://www.youtube.com/watch?v=TWPwYiy_Xqw">
+                How to get hired after freecodecamp</a
+              >
+              <p>Free Code Camp <i class="fa-solid fa-circle-check"></i></p>
+              <p>291K views &bull; 8 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="vid-list">
+          <a href="./src/pages/play.html">
+            <img class="thumbnail" src="./src/img/platziRussia.jpg"
+          /></a>
+          <span class="unhide">55:18</span>
+          <span class="hide">Keep hovering to play</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          <div class="flex-div">
+            <img
+              class="circle-img"
+              src="./src/img/platzi.jpg"
+              alt="channel icon"
+            />
+            <div class="vid-info">
+              <a href="https://www.youtube.com/watch?v=7iC26Nyn2aw">
+                Russia creates its own Instagram and Netflix will charge more
+                for accounts shared | NEWS</a
+              >
+              <p>Platzi <i class="fa-solid fa-circle-check"></i></p>
+              <p>85 views &bull; 16 days ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
   </body>
 </html>
