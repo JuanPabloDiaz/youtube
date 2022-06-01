@@ -6,6 +6,14 @@
 	--black-color: #000;
 	--blue-link-color: #0000ff;
 }
+.darkmode {
+	--gray-color: #fff;
+	--white-color: #5a5a5a;
+	--light-gray-color: #000;
+	--cream-color: #302f2f;
+	--black-color: rgb(206, 203, 203);
+	--blue-link-color: #4040fc;
+}
 * {
 	margin: 0;
 	padding: 0;
