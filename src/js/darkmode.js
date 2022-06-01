@@ -1,3 +1,7 @@
+// Dark mode tutorial:
+// https://codepen.io/kevinpowell/pen/EMdjOV
+// https://www.youtube.com/watch?v=wodWDIdV9BY
+
 // check for saved 'darkMode' in localStorage
 let darkMode = localStorage.getItem("darkMode");
 
