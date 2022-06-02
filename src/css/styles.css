@@ -290,21 +290,26 @@ nav {
 	}
 }
 @media (max-width: 850px) {
-
+/* to fix a problem when changing resolutions */
 	.container .banner{
 		display: none;
 	}
 }
 
-@media (max-width: 400px) {
-
+@media (max-width: 470px) {
+	html {
+		margin-right: -50px;	
+	}
+}
+	@media (max-width: 400px) {
 	.nav-right .dark-mode-toggle {
 	margin-right: 12%;
 	}
 	.nav-middle .search-box input {
 		width: 120px;
-	}
+	/* }
 	html {
 		margin-right: -50px;	
+	 */
 	}
 }
