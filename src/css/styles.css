@@ -175,13 +175,10 @@ nav {
 	border-radius: 50%;
 	margin-right: 20px;
 }
-/* JP ADDING MORE INFO */
-  
-  .sidebar a:hover{
-	background-color: var(--sidebar-hover);
-	width: 100%;
-  }
-/* END JP ADDING INFO */
+.sidebar a:hover{
+background-color: var(--sidebar-hover);
+width: 88%;
+}
 
 /* ---------- reduce sidebar size (JS action): --------------- */
 .small-sidebar {
