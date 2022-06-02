@@ -39,10 +39,10 @@
 }
 .play-video .tags a {
 	color: var(--blue-link-color);
-	font-size: 13px;
+	font-size: 1.3rem;
 }
 .play-video h3 {
-	font-size: 22px;
+	font-size: 2.2rem;
 	font-weight: 600;
 }
 .play-video .play-video-info {
@@ -51,7 +51,7 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	margin-top: 10px;
-	font-size: 14px;
+	font-size: 1.4rem;
 	color: var(--gray-color);
 }
 .play-video .play-video-info a img {
@@ -85,11 +85,11 @@
 }
 .publisher div p {
 	color: var(--black-color);
-	font-size: 18px;
+	font-size: 1.8rem;
 	font-weight: 600;
 }
 .publisher div span {
-	font-size: 13px;
+	font-size: 1.3rem;
 	color: var(--gray-color);
 }
 .publisher button {
@@ -106,12 +106,12 @@
 	margin: 15px 0;
 }
 .vid-description p {
-	font-size: 14px;
+	font-size: 1.4rem;
 	color: var(--gray-color);
 	margin-bottom: 5px;
 }
 .vid-description h4{
-	font-size: 14px;
+	font-size: 1.4rem;
 	color: var(--gray-color);
 	margin-top: 15px;
 }
@@ -144,11 +144,11 @@
 	margin-right: 15px;
 }
 .old-comment h3 {
-	font-size: 14px;
+	font-size: 1.4rem;
 	margin-bottom: 2px;
 }
 .old-comment h3 span{
-	font-size: 12px;
+	font-size: 1.2rem;
 	color: var(--light-gray-color);
 	font-weight: 500;
 	margin-left: 8px;
@@ -157,7 +157,7 @@
 	/* display: flex;
 	align-items: center; */
 	margin: 8px 0;
-	font-size: 14px;
+	font-size: 1.4rem;
 }
 .old-comment .a-comment-action img {
 	border-radius: 0;

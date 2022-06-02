@@ -4,14 +4,18 @@
 	--light-gray-color: #ccc;
 	--cream-color: #f9f9f9;
 	--black-color: #000;
+	--hover-color: rgba(0, 0, 0, 0.6);
+	--sidebar-hover: rgba(169, 169, 169, 0.473);
 	--blue-link-color: #0000ff;
 }
 .darkmode {
-	--gray-color: #fff;
-	--white-color: #5a5a5a;
+	--gray-color: rgb(206, 203, 203);
+	--white-color: #302f2f;
 	--light-gray-color: #000;
-	--cream-color: #302f2f;
-	--black-color: rgb(206, 203, 203);
+	--cream-color: #5a5a5a;
+	--black-color: #fff;
+	--hover-color: rgba(255, 255, 255, 0.6) ;
+	--sidebar-hover: rgba(169, 169, 169, 0.473);
 	--blue-link-color: #4040fc;
 }
 * {
@@ -74,7 +78,8 @@ nav {
 	border: none;
 	background-color: transparent;
 	font-size: 2rem;
-	p
+	cursor: pointer;
+	opacity: 0.8;
 }
 
 .nav-left .menu-icon {
@@ -92,6 +97,8 @@ nav {
 	padding: 10px;
 	margin-left: 8px;
 	font-size: 2rem;
+	cursor: pointer;
+	opacity: 0.8;
 }
 
 .nav-middle .search-box {
@@ -170,8 +177,9 @@ nav {
 }
 /* JP ADDING MORE INFO */
   
-  .aside--list a:hover{
-	background-color: rgba(169, 169, 169, 0.473);
+  .sidebar a:hover{
+	background-color: var(--sidebar-hover);
+	width: 100%;
   }
 /* END JP ADDING INFO */
 
@@ -221,7 +229,7 @@ nav {
 .vid-list span, .vid-list .hide {
 	position: absolute;
 	color: var(--white-color);
-	background: rgba(0, 0, 0, 0.6) ;
+	background: var(--hover-color);
 	border-radius: 6px;
 	padding: 4px 9px;
 	bottom: 68px;
