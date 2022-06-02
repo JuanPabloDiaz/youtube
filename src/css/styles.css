@@ -26,6 +26,13 @@
 	font-size: 62.5%;
 } */
 
+/* Disable Horizontal Scroll: */
+html, body {
+	width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a {
 	color: var(--gray-color);
 }
@@ -297,10 +304,10 @@ nav {
 }
 
 @media (max-width: 470px) {
-	html {
+	/* html {
 		margin-right: -50px;	
 	}
-}
+} */
 	@media (max-width: 400px) {
 	.nav-right .dark-mode-toggle {
 	margin-right: 12%;
