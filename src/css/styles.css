@@ -100,7 +100,10 @@ nav {
 	cursor: pointer;
 	opacity: 0.8;
 }
-
+.nav-middle .search-btn {
+	border: none;
+	background-color: transparent;
+}
 .nav-middle .search-box {
 	border: 1px solid var(--light-gray-color);
 	margin-right: 15px;
