@@ -1,3 +1,5 @@
+// Making Search Box Functional:
+
 const videoCardContainer = document.querySelector(".video-container");
 
 let api_key = "your api key";
@@ -69,6 +71,8 @@ searchBtn.addEventListener("click", () => {
 // ENTER Key:
 searchInput.addEventListener("keyup", (event) => {
   if (event.which === 13) {
-    location.href = searchLink + searchInput.value;
+    if (searchInput.value.length) {
+      location.href = searchLink + searchInput.value;
+    }
   }
 });
