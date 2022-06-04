@@ -8,5 +8,10 @@ Project is Deployed on Vercel: [URL](https://youtube-ten-beta.vercel.app/)
 
 Using HTML, CSS And JS 
 
+## Video tutorial that helped me:
 
-[URL](https://www.youtube.com/watch?v=4ykAepVkG5Y) for the video tutorial
+[1. Easy Tutorials](https://www.youtube.com/watch?v=4ykAepVkG5Y)
+
+[2. Youtube API](https://www.youtube.com/watch?v=fOKgHld96mU)
+
+[3. Enter key in JS](https://www.youtube.com/watch?v=-BgTrpvOFFc)
