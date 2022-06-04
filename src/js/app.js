@@ -76,3 +76,5 @@ searchInput.addEventListener("keyup", (event) => {
     }
   }
 });
+
+// https://www.youtube.com/watch?v=fOKgHld96mU
