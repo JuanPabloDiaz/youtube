@@ -1,16 +1,10 @@
-# Youtube
-Youtube Clone
+# Vid-Box Website
 
-Project developed on a Platzi Live class [link]()
+Vid-Box is a Youtube Clone project. it started as a project developed on a Platzi Live class. in which I learned new concepts. The site was not fully funtional or responsive and I wanted more. So I put some work and managed to add new features and make it what its now. A responsive site with a darkmode button, a hidden sidebar menu and a working Search Box that consume a youtube API.
 
 
 Project is Deployed on Vercel: [URL](https://youtube-ten-beta.vercel.app/)
 
-
-
-#  VidTube Website 
-
-Website Like YouTube, Video Sharing Website Design
 
 Using HTML, CSS And JS 
 
