@@ -34,7 +34,11 @@ This course is part of a [Platzi Challenge](https://platzi.com/blog/portafolio-w
 Project is Deployed on Vercel: [URL](https://youtube-ten-beta.vercel.app/)
 
 Project is Deployed on Github Pages: [https://juanpablodiaz.github.io/youtube](https://juanpablodiaz.github.io/youtube/)
+### Desktop View
+<div align="center">
 
+![](./desktop.png)
+</div>
 
 <!-- CONTACT -->
 
