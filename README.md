@@ -31,23 +31,41 @@ This class is based on Hyper Text Markup Language (HTML), Cascading Style Sheets
 
 This course is part of a [Platzi Challenge](https://platzi.com/blog/portafolio-web-2022/) I participated on. In which for two months, I got the oportunity to join 24 live meeting and multiple classes with the only purpose of creating a Web Portaflio.
 
-Project is Deployed on Vercel: [URL](https://youtube-ten-beta.vercel.app/)
+### Project deployed using:
+ - Vercel: [View Demo](https://youtube-ten-beta.vercel.app/)
 
-Project is Deployed on Github Pages: [https://juanpablodiaz.github.io/youtube](https://juanpablodiaz.github.io/youtube/)
-### Desktop View
+- Github Pages: [https://juanpablodiaz.github.io/youtube](https://juanpablodiaz.github.io/youtube/)
+
+<!-- VIEWS -->
+
+### Desktop Screen 💻
+
 <div align="center">
 
 ![](./desktop.png)
 </div>
 
+### Mobile Screen 📱
+
+<div align="center">
+
+![](./mobile.png)
+</div>
+
+<!-- PROJECTS -->
+
+## Projects 🚀
+
+![](https://img.shields.io/badge/Platzi_Repos-121f3d?style=for-the-badge&logo=Platzi&logoColor=98CA3F)
+[![](https://img.shields.io/badge/2021-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2021)
+[![](https://img.shields.io/badge/2022-222?style=for-the-badge)](https://github.com/JuanPabloDiaz/platzi/tree/main/2022)
 <!-- CONTACT -->
 
 ## Contact 📞
 
-
-- Juan Diaz <a href="https://www.linkedin.com/in/juandiaz-col/" title="linkedin"><img src="https://www.freepnglogos.com/uploads/linkedin-social-media-logo-7.png" width="20" alt="linkedin" /></a>
-<a href="https://www.twitter.com/1diazdev" title="twitter"><img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" width="20" alt="twitter" /></a>
-<a href="mailto:jdiaz028@email.cpcc.edu" title="email"><img src="https://th.bing.com/th/id/R.c1788ceb22d4f2c44e1ebba0baa045f0?rik=Xgo0FJUU748GNQ&riu=http%3a%2f%2fwww.add-tek.com%2fwp-content%2fuploads%2f2019%2f05%2femail-icon.png&ehk=43jcVRhbG574owWTo3L146ImtAi%2b2i8D84wPIcvuyAc%3d&risl=&pid=ImgRaw&r=0" width="20" alt="email" /></a>
+[![](https://img.shields.io/badge/@1diazdev-fff?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/1diazdev/)
+[![](https://img.shields.io/badge/@1diazdev-fff?style=for-the-badge&logo=Twitter&logoColor=1DA1F2)](https://www.twitter.com/1diazdev)
+[![](https://img.shields.io/badge/Gmail-fff?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:juan.diaz93@hotmail.com)
 
 <!-- ACKNOWLEDGMENTS -->
 
@@ -78,3 +96,6 @@ Crea tu Portafolio como Web Developer 2022
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+
+
