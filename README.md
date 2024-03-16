@@ -45,12 +45,16 @@ This course is part of a [Platzi Challenge](https://platzi.com/blog/portafolio-w
 ![](./desktop.png)
 </div>
 
-### Mobile Screen 📱
+<!-- ### Mobile Screen 📱
 
 <div align="center">
 
 ![](./mobile.png)
-</div>
+</div> -->
+
+### Lighthouse Score 🚀
+
+![](./lighthouse.png)
 
 <!-- PROJECTS -->
 
