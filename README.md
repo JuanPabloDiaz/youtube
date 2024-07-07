@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-# Vid-Box Website
+# Vid-Box
 ## Youtube clone Project
 
 
